@@ -41,5 +41,5 @@ jobs:
         run: |
           while true; do
             ./cloudflared tunnel --url http://127.0.0.1:$PORT --metrics localhost:45678
-            sleep 3600 # Executa a cada hora
+            sleep 31536000 # Executa a cada hora
           done
